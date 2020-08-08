@@ -1,6 +1,6 @@
-戻る、進むのショートカットキーを設定できるFirefoxアドオン
+タブ切り替えを設定できるFirefoxアドオン
   
-Default shortcut keys  デフォルトのショートカットキー  
+デフォルトのショートカットキー  
 **Ctrl+Alt+J**: 戻る  
 **Ctrl+Alt+L**: 進む  
   
