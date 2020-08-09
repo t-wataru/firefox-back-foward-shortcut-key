@@ -1,0 +1,38 @@
+{
+   "manifest_version": 2,
+   "name": "Firefox switch tab shortcut key",
+   "description": "shortcut key to switch tab",
+   "version": "1.0.0",
+   "content_scripts": [ {
+      "all_frames": true,
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ],
+      "js": [ "js/pagescript.js" ]
+   } ],
+   "icons": {
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+   },
+   "permissions": [
+     "tabs",
+     "<all_urls>"
+   ],
+   "background": {
+     "scripts": [
+       "js/background.js"
+     ]
+   },
+   "commands": {
+    "_back": {
+      "suggested_key": {
+          "default": "Alt+Shift+A"
+      },
+      "description": "back tab"
+    },
+    "_foward": {
+      "suggested_key": {
+          "default": "Alt+Shift+D"
+      },
+      "description": "foward tab"
+  }
+  }
+}
